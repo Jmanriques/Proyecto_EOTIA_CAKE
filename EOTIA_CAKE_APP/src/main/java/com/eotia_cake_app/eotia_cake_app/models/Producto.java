@@ -14,7 +14,7 @@ public class Producto {
     private int id;
     @Getter @Setter @Column(name = "descripcion")
     private String descripcion;
-    @Getter @Setter @Column(name = "precioUnitario")
+    @Getter @Setter @Column
     private double precioUnitario;
     @Getter @Setter @Column(name = "Stock")
     private int stock;

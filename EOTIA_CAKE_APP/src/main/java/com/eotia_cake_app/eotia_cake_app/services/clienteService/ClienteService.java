@@ -1,7 +1,7 @@
 package com.eotia_cake_app.eotia_cake_app.services.clienteService;
 
 import com.eotia_cake_app.eotia_cake_app.models.Cliente;
-import com.eotia_cake_app.eotia_cake_app.repository.IClienteRepositoy;
+import com.eotia_cake_app.eotia_cake_app.repository.IClienteRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -12,7 +12,7 @@ import java.util.List;
 public class ClienteService implements IClienteService {
 
     @Autowired
-    IClienteRepositoy clienteRepositoy;
+    IClienteRepository clienteRepositoy;
 
     @Override
     public List<Cliente> ObtenerClientes() {
