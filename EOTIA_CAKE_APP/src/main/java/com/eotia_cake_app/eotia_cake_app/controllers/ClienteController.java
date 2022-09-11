@@ -28,4 +28,6 @@ public class ClienteController {
         clienteService.RegistrarCliente(cliente);
         return "Usuario Registrado";
     }
+
+
 }
