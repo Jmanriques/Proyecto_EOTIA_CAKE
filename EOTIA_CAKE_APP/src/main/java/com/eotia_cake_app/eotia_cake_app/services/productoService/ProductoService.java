@@ -20,7 +20,6 @@ public class ProductoService implements IProductoService{
         productoRepository.findAll().forEach(producto -> productos.add(producto));
         return productos;
     }
-
     @Override
     public Producto BuscarProducto(int id) {
         return productoRepository.findById(id).get();

@@ -18,4 +18,6 @@ public class Producto {
     private double precioUnitario;
     @Getter @Setter @Column(name = "Stock")
     private int stock;
+
+
 }
