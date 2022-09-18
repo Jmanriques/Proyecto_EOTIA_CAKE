@@ -142,7 +142,7 @@ h6 {
 
 #header.header-scrolled {
   top: 0;
-  background: #ab80b2;
+  background: #e9c7ed;
   border-bottom: 1px solid #37332a;
 }
 
@@ -163,7 +163,7 @@ h6 {
 }
 
 #header .logo a {
-  font-size: 1.5em;
+  font-size: 1.2em;
   font-family: 'DeliCake';
   color: #af7800;
   -webkit-text-stroke: 1px #2e1d01;
@@ -246,7 +246,7 @@ h6 {
 .navbar .active,
 .navbar .active:focus,
 .navbar li:hover>a {
-  color: #e2b9ef;
+  color: #b451d3;
 }
 
 .navbar .dropdown ul {
