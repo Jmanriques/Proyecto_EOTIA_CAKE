@@ -12,7 +12,7 @@ Telefono varchar(50)
 CREATE TABLE  IF NOT EXISTS  Producto
 (
 IdProducto BIGINT AUTO_INCREMENT primary key,
-Nombre integer,
+Nombre varchar(100),
 Descripcion varchar(100),
 Precio bigint
 );
