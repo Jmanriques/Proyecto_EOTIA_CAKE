@@ -12,12 +12,16 @@ public class Producto {
     @GeneratedValue(strategy = GenerationType.AUTO)
     @Getter
     private int id;
+    @Getter @Setter @Column(name = "nombre")
+    private String nombre;
     @Getter @Setter @Column(name = "descripcion")
     private String descripcion;
     @Getter @Setter @Column
     private double precioUnitario;
-    @Getter @Setter @Column(name = "Stock")
-    private int stock;
+    @Getter @Setter @Column(name = "categoria")
+    private String categoria;
+    @Getter @Setter @Column(name = "img")
+    private String img;
 
 
 }
