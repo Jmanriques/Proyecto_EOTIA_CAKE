@@ -17,6 +17,8 @@ async function cargarProductos() {
     let listadoHtml = '';
 
     for (let index = 0; index < productos.length; index++) {
+
+
         let usuarioHtml = `
         <div class="col-lg-6 menu-item ${productos[index].categoria}">
             <img src="${productos[index].img}" class="menu-img" alt="${productos[index].categoria}">
@@ -29,6 +31,7 @@ async function cargarProductos() {
         </div>
         `;
         listadoHtml += usuarioHtml;
+
     }
 
     

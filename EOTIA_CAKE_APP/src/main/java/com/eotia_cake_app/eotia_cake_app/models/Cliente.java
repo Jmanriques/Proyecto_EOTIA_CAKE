@@ -19,8 +19,4 @@ public class Cliente {
     private String correo;
     @Getter @Setter @Column(name = "telefono")
     private String telefono;
-    @Getter @Setter @Column(name = "password")
-    private String password;
-    @Getter @Setter @Column(name = "direccion")
-    private String direccion;
 }
