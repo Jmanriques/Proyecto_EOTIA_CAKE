@@ -44,6 +44,6 @@ INSERT INTO producto (Idproducto, Nombre, Descripcion, Precio)values ('865425', 
 
 
 
-INSERT INTO venta (Idventa, Idproducto, Identificacion, FechaVenta, TotalVenta, Cantidad, Subtotal)values ('10123566', 'Franklin', 'Garcia','frangar@gmail.com', '3165343109');
+#INSERT INTO venta (Idventa, Idproducto, Identificacion, FechaVenta, TotalVenta, Cantidad, Subtotal)values ('10123566', 'Franklin', 'Garcia','frangar@gmail.com', '3165343109');
 
-INSERT INTO Factura (IdFactura, IdVenta)values ();
+#INSERT INTO Factura (IdFactura, IdVenta)values ();
