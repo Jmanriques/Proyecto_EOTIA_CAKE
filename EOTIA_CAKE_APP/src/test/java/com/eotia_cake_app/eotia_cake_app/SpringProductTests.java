@@ -27,7 +27,7 @@ class SpringProductTests {
     @Test
     public void testGetProductbyId(){
         Producto producto = productoService.BuscarProducto(1);
-        assertEquals(20000,producto.getPrecioUnitario());
+        assertEquals(50000,producto.getPrecioUnitario());
     }
 
     @Test
