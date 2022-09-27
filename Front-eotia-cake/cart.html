@@ -57,144 +57,24 @@
 
     </div>
   </header><!-- End Header -->
-
-  <!-- ======= Hero Section ======= -->
-  <section id="hero" class="d-flex align-items-center">
-    <div class="container position-relative text-center text-lg-start" data-aos="zoom-in" data-aos-delay="100">
-      <div class="row">
-        <div class="col-lg-8">
-          <h1>Bienvenido a <span>Eotia Cake</span></h1>
-          <h2>Endulzamos tu vida en todo momento🧁</h2>
-        </div>
-
-
-      </div>
-    </div>
-  </section><!-- End Hero -->
-
-  <main id="main">
-
-    <!-- ======= Events Section ======= -->
-    <section id="events" class="events">
-      <div class="container" data-aos="fade-up">
-
-        <div class="section-title">
-          <h2>¡Celebralo!</h2>
-          <p>Preparamos deliciosos postres y pasteles para toda ocasión…</p>
-        </div>
-
-        <div class="events-slider swiper" data-aos="fade-up" data-aos-delay="100">
-          <div class="swiper-wrapper">
-
-            <div class="swiper-slide">
-              <div class="row event-item">
-                <div class="col-lg-6">
-                  <img src="assets/img/cumpleaños.png" class="img-fluid" alt="">
-                </div>
-                <div class="col-lg-6 pt-4 pt-lg-0 content">
-                  <h3>Cumpleaños</h3>
-                  <div class="price">
-                    <p><span>🥳</span></p>
-                  </div>
-                  <p class="fst-italic" style="font-size: 2.2em">
-                    Para que celebres con los que más quieres, un año más de vida.
-                  </p>
-                </div>
-              </div>
-            </div><!-- End testimonial item -->
-
-            <div class="swiper-slide">
-              <div class="row event-item">
-                <div class="col-lg-6">
-                  <img src="assets/img/dias_especiales.png" class="img-fluid" alt="">
-                </div>
-                <div class="col-lg-6 pt-4 pt-lg-0 content">
-                  <h3>Dias especiales</h3>
-                  <div class="price">
-                    <p><span>😋</span></p>
-                  </div>
-                  <p class="fst-italic" style="font-size: 2.2em">
-                    Para que celebres los dias mas especiales para ti y los tuyos.
-                  </p>
-                </div>
-              </div>
-            </div><!-- End testimonial item -->
-
-            <div class="swiper-slide">
-              <div class="row event-item">
-                <div class="col-lg-6">
-                  <img src="assets/img/cupcakes.png" class="img-fluid" alt="">
-                </div>
-                <div class="col-lg-6 pt-4 pt-lg-0 content">
-                  <h3>Cualquier dia del año</h3>
-                  <div class="price">
-                    <p><span>🧁</span></p>
-                  </div>
-                  <p class="fst-italic" style="font-size: 2.2em">
-                    Para que compartas muchos detalles
-                  </p>
-                </div>
-              </div>
-            </div><!-- End testimonial item -->
-
-            <div class="swiper-slide">
-              <div class="row event-item">
-                <div class="col-lg-6">
-                  <img src="assets/img/navidad.png" class="img-fluid" alt="">
-                </div>
-                <div class="col-lg-6 pt-4 pt-lg-0 content">
-                  <h3>Dias festivos</h3>
-                  <div class="price">
-                    <p><span>🎅🏻🎃❤</span></p>
-                  </div>
-                  <p class="fst-italic" style="font-size: 2.2em">
-                    Para que celebres navidad, hallowen y mucho mas…
-                  </p>
-                </div>
-              </div>
-            </div><!-- End testimonial item -->
-
+  <main>
+    <section class="cart-page">
+      <div class="navbar">
+        <a href="index.html">
+          <h2>Mi carrito</h2>
+        </a>
+    
+        <a href="cart.html">
+          <div class="cart">
+            <i class="bi bi-cart2"></i>
+            <div id="cartAmount" class="cartAmount">0</div>
           </div>
-          <div class="swiper-pagination"></div>
-        </div>
-
-      </div>
-    </section><!-- End Events Section -->
-
-    <!-- ======= Shopping cart ======= -->
-    <section id="menu" class="menu section-bg">
-      <div class="container" data-aos="fade-up">
-
-        <div class="section-title">
-          <h2>Productos</h2>
-          <p>Nuestros productos</p>
-        </div>
-
-        <section>
-          <div class="nav-shop">
-            <a href="index.html">
-              <h2>Mi carrito</h2>
-            </a>
-
-            <a href="cart.html">
-              <div class="cart">
-                <i class="bi bi-cart2"></i>
-                <div id="cartAmount" class="cartAmount">0</div>
-              </div>
-            </a>
-
-          </div>
-
-          <div class="shop" id="shop">
-
-          </div>
-        </section>
-      </div>
-      <!-- End Shopping cart -->
-
-
-  </main><!-- End #main -->
-
+        </a>
+      </div>    
+      <div id="label" class="text-center"></div>
+      <div class="shopping-cart" id="shopping-cart"></div>
+    </section>
+  </main>
   <!-- ======= Footer ======= -->
   <footer id="footer">
     <div class="footer-top">
@@ -240,7 +120,7 @@
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
   <script src="assets/js/Data.js"></script>
-  <script src="assets/js/main-cart.js"></script>
+  <script src="assets/js/cart.js"></script>
 
 </body>
 
