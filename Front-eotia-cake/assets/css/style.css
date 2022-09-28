@@ -31,6 +31,8 @@ h4,
 h5,
 h6 {
   font-family: "Playfair Display", serif;
+  margin: 15px;
+  padding: 5px;
 }
 
 /*--------------------------------------------------------------
@@ -157,8 +159,8 @@ h6 {
   font-family: "Poppins", sans-serif;
 }
 
-@font-face{
-  font-family:'DeliCake';
+@font-face {
+  font-family: 'DeliCake';
   src: url(../fonts/DeliCake.ttf);
 }
 
@@ -237,9 +239,9 @@ h6 {
 
 .navbar a i,
 .navbar a:focus i {
-  font-size: 12px;
+  font-size: 30px;
   line-height: 0;
-  margin-left: 5px;
+  margin-left: 0px;
 }
 
 .navbar a:hover,
@@ -633,8 +635,11 @@ h6 {
 # Sections General
 --------------------------------------------------------------*/
 section {
-  padding: 20px 0;
+  display: flex;
+  padding: 20px 20px;
   overflow: hidden;
+  flex-direction: column;
+  align-items: center;
 }
 
 .section-bg {
@@ -673,6 +678,13 @@ section {
   font-weight: 700;
   font-family: "Playfair Display", serif;
   color: #cda45e;
+}
+
+/*--------------------------------------------------------------
+# Others sections
+--------------------------------------------------------------*/
+.cart-page .sign_up {
+  margin-top: 8em;
 }
 
 /*--------------------------------------------------------------
@@ -772,11 +784,197 @@ section {
 /*--------------------------------------------------------------
 # carrito de compras
 --------------------------------------------------------------*/
-@media (min-width: 1025px) {
-  .h-custom {
-  height: 100vh !important;
+/**
+* ! Changing default styles of the browser
+**/
+
+i {
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+/**
+* ! Navbar STyles are here
+**/
+.nav-shop {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  color: white;
+  padding: 25px 60px;
+  margin-bottom: 30px;
+}
+
+.cart {
+  position: relative;
+  background-color: #fff;
+  color: #212529;
+  font-size: 30px;
+  padding: 5px;
+  border-radius: 4px;
+}
+
+.cartAmount {
+  position: absolute;
+  top: -15px;
+  right: -10px;
+  font-size: 16px;
+  background-color: red;
+  color: white;
+  padding: 3px;
+  border-radius: 3px;
+}
+
+/**
+* ! Shop items styles are here
+**/
+
+.shop {
+  display: grid;
+  grid-template-columns: 3, 150px;
+  gap: 30px;
+  justify-content: start;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 1000px) {
+  .shop {
+    grid-template-columns: repeat(2, 223px);
   }
+}
+
+@media (max-width: 500px) {
+  .shop {
+    grid-template-columns: repeat(1, 223px);
   }
+}
+
+.item {
+  display: flex;
+  border: 2px solid #212529;
+  border-radius: 4px;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.item img {
+  width: 15%;
+  margin: 2%;
+  padding: 0%;
+  border-radius: 30px 30px;
+}
+
+.details {
+  display: flex;
+  padding: 10px;
+  gap: 10px;
+  justify-content: space-evenly;
+  flex-direction: row;
+}
+
+.price-quantity {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  font-size: 16px;
+}
+
+.bi-dash-lg {
+  color: red;
+}
+
+.bi-plus-lg {
+  color: green;
+}
+
+/**
+* ! style rules for label and some buttons
+**/
+
+.text-center {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.HomeBtn,
+.checkout,
+.removeAll {
+  background-color: #212529;
+  color: white;
+  border: none;
+  padding: 6px;
+  border-radius: 3px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.checkout {
+  background-color: green;
+}
+
+.removeAll {
+  background-color: red;
+}
+
+.bi-x-lg {
+  color: red;
+  font-weight: bold;
+}
+
+/**
+* ! style rules for shopping-cart
+**/
+
+.shopping-cart {
+  display: grid;
+  grid-template-columns: repeat(1, 320px);
+  justify-content: center;
+  gap: 15px;
+}
+
+/**
+* ! style rules for cart-item
+**/
+
+.cart-item {
+  border: 2px solid #212529;
+  border-radius: 5px;
+  display: flex;
+}
+
+.title-price-x {
+  width: 195px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* border: 2px solid red; */
+}
+
+.title-price {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.cart-item-price {
+  background-color: #212529;
+  color: white;
+  border-radius: 4px;
+  padding: 3px 6px;
+}
+
 
 /*--------------------------------------------------------------
 # celebralo
@@ -873,14 +1071,16 @@ section {
 }
 
 /*--------------------------------------------------------------
-# Contactanos
+# Registrate
 --------------------------------------------------------------*/
 .book-a-table .php-email-form {
   width: 100%;
 }
 
 .book-a-table .php-email-form .form-group {
-  padding-bottom: 8px;
+  padding-bottom: 30px;
+  display: grid;
+  justify-content: center;
 }
 
 .book-a-table .php-email-form .validate {
@@ -1012,7 +1212,7 @@ section {
   line-height: 2;
   font-weight: 100;
   text-transform: uppercase;
-  font-family: "DeliCake" , sans-serif;
+  font-family: "DeliCake", sans-serif;
   width: 100%;
 }
 
