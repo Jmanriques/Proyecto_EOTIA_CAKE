@@ -1,6 +1,5 @@
 $(document).ready(function() {
-    cargarProductos();
-    
+    cargarProductos();  
 });
 
 let basket = JSON.parse(localStorage.getItem("data")) || [];
@@ -18,9 +17,6 @@ async function cargarProductos() {
     let listadoHtml = '';
 
     for (let index = 0; index < productos.length; index++) {
-
-        const producto = productos[index];
-        console.log(producto)
 
         let usuarioHtml = `
         <div class="col-lg-6 menu-item ${productos[index].categoria}">

@@ -1142,3 +1142,8 @@ section {
   font-size: 13px;
   color: #fff;
 }
+
+#clear{
+  background-color: rgba(139, 138, 138, 0.2);
+  color:  #fff;
+}

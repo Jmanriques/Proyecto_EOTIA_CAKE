@@ -36,60 +36,89 @@
 
 <body>
   <!-- ======= Header ======= -->
-  <header id="header" class="fixed-top d-flex align-items-cente">
     <div class="container-fluid container-xl d-flex align-items-center justify-content-lg-between">
-
       <h1 class="logo me-auto me-lg-0"><a href="index.html">Eotia Cake</a></h1>
-      <!-- Uncomment below if you prefer to use an image logo -->
-      <!-- <a href="index.html" class="logo me-auto me-lg-0"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+    </div>
+  <!-- End Header -->
 
-      <nav id="navbar" class="navbar order-last order-lg-0">
-        <ul>
-          <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
-          <li><a class="nav-link scrollto" href="#events">¡Celebralo!</a></li>
-          <li><a class="nav-link scrollto" href="#menu">Productos</a></li>
-          <li><a class="nav-link scrollto" href="cart.html">Mi carrito</a></li>
-        </ul>
-        <i class="bi bi-list mobile-nav-toggle"></i>
-      </nav><!-- .navbar -->
-      <a href="#book-a-table" class="book-a-table-btn scrollto d-none d-lg-flex">Regístrate</a>
+
+  <!-- ======= Cart Section ======= -->
+  <section id="menu" class="menu section-bg">
+    <div class="container" data-aos="fade-up">
+
+      <div class="section-title"> 
+        <div id="cartAmount" class="cartAmount"></div>
+      </div>
+
+
+      
+
+      <div class="row menu-container" id="productos" data-aos="fade-up" data-aos-delay="200"></div>
+
+      
 
     </div>
-  </header><!-- End Header -->
 
-  <!-- ======= Footer ======= -->
-  <footer id="footer">
-    <div class="footer-top">
-      <div class="container">
-        <div class="row">
+  </section>
 
-          <div class="col-lg-3 col-md-6" style="width: 36%;">
-            <div class="footer-info">
-              <h3>Eotia cake</h3>
-              <div class="social-links mt-3">
-                <a href="https://api.whatsapp.com/send/?phone=573174661409&text&type=phone_number&app_absent=0"
-                  class="whatsapp"><i class="bx bxl-whatsapp"></i></a>
-                <a href="https://www.instagram.com/eotia_cake/" class="instagram"><i class="bx bxl-instagram"></i></a>
-              </div>
-            </div>
+  <section id="menu" class="menu section-bg">
+    <div id="label" class="text-center"></div>
+    
+    <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+      <button type="button" id="clear" class="btn" onclick="clearCart()">Limpiar Carrito <i class="bi bi-x-octagon"></i></button>
+    </div>
+  </section>
+
+  
+
+  <!-- ======= Book A Table Section ======= -->
+  <section id="book-a-table" class="book-a-table">
+    <div class="container" data-aos="fade-up">
+
+      <div class="section-title">
+        <h2>Tu Informacion</h2>
+        <p>Dejanos tus datos</p>
+      </div>
+
+      <form action="forms/book-a-table.php" method="post" role="form" class="php-email-form" data-aos="fade-up"
+        data-aos-delay="100">
+        <div class="row" style=" flex-direction: row; justify-content: center;">
+          <div class="col-lg-4 col-md-6 form-group">
+            <input type="text" name="cedula" class="form-control" id="cedula" placeholder="Cedula"
+              data-rule="minlen:4" data-msg="Please enter at least 4 chars">
+            <div class="validate"></div>
+          </div>
+          <div class="col-lg-4 col-md-6 form-group">
+            <input type="text" name="name" class="form-control" id="name" placeholder="Tu nombre"
+              data-rule="minlen:4" data-msg="Please enter at least 4 chars">
+            <div class="validate"></div>
+          </div>
+          <div class="col-lg-4 col-md-6 form-group">
+            <input type="text" name="apellido" class="form-control" id="apellido" placeholder="Tu apellido"
+              data-rule="minlen:4" data-msg="Please enter at least 4 chars">
+            <div class="validate"></div>
+          </div>
+          <div class="col-lg-4 col-md-6 form-group mt-3 mt-md-0">
+            <input type="email" class="form-control" name="email" id="email" placeholder="Tu correo"
+              data-rule="email" data-msg="Please enter a valid email">
+            <div class="validate"></div>
+          </div>
+          <div class="col-lg-4 col-md-6 form-group mt-3 mt-md-0">
+            <input type="number" class="form-control" name="phone" id="phone" placeholder="Tu telefono"
+              data-rule="minlen:4" data-msg="Please enter at least 4 chars">
+            <div class="validate"></div>
           </div>
         </div>
-      </div>
-    </div>
+        <div class="mb-3">
+          <div class="loading">Cargando...</div>
+          <div class="error-message"></div>
+          <div class="sent-message">Gracias por tus comentarios :D</div>
+        </div>
+        <div class="text-center"><button type="submit">Enviar</button></div>
+      </form>
 
-    <div class="container">
-      <div class="copyright">
-        &copy; Copyright <strong><span>Eotia Cake</span></strong>. All Rights Reserved
-      </div>
-      <div class="credits">
-        Diseñado en <a href="https://bootstrapmade.com/">BootstrapMade</a>
-      </div>
     </div>
-  </footer><!-- End Footer -->
-
-  <div id="preloader"></div>
-  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
-      class="bi bi-arrow-up-short"></i></a>
+  </section><!-- End Book A Table Section -->
 
   <!-- Vendor JS Files -->
   <script src="assets/vendor/aos/aos.js"></script>
@@ -101,7 +130,8 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
-  <script src="assets/js/productos.js"></script>
+  <script src="assets/js/cart.js"></script>
+
 
 </body>
 
