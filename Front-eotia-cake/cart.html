@@ -46,19 +46,18 @@
 
       <nav id="navbar" class="navbar order-last order-lg-0">
         <ul>
-          <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
-          <li><a class="nav-link scrollto" href="#events">¡Celebralo!</a></li>
-          <li><a class="nav-link scrollto" href="#menu">Productos</a></li>
+          <li><a class="nav-link scrollto active">Home</a></li>
+          <li><a class="nav-link scrollto">¡Celebralo!</a></li>
+          <li><a class="nav-link scrollto">Productos</a></li>
+          <li><a class="nav-link scrollto">¡Siguenos!</a></li>
           <!-- <li><a class="nav-link scrollto" href="#shop">Mi carrito</a></li> -->
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
-      <a href="#book-a-table" class="book-a-table-btn scrollto d-none d-lg-flex">Regístrate</a>
-
     </div>
   </header><!-- End Header -->
   <main>
-    <section class="cart-page">
+    <section class="cart_page" style="margin-top: 8em;">
       <div class="navbar">
         <a href="index.html">
           <h2>Mi carrito</h2>
@@ -73,6 +72,48 @@
       </div>    
       <div id="label" class="text-center"></div>
       <div class="shopping-cart" id="shopping-cart"></div>
+    </section>
+
+    <section id="book-a-table" class="book-a-table">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-register">
+          <h2>Registrate</h2>
+          <p>Porfavor dejanos tus datos para completar la compra</p>
+        </div>
+
+        <form action="forms/book-a-table.php" method="post" role="form" class="php-email-form" data-aos="fade-up" data-aos-delay="100">
+          <div class="row-register">
+            <div class="col-lg-4 col-md-6 form-group mt-3 mt-md-0">
+              <input type="number" class="form-control" name="identification" id="identification" placeholder="Tu cedula" data-rule="minlen:7" data-msg="Please enter at least 4 chars">
+              <div class="validate"></div>
+            </div>
+            <div class="col-lg-4 col-md-6 form-group">
+              <input type="text" name="name" class="form-control" id="name" placeholder="Tu nombre" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
+              <div class="validate"></div>
+            </div>
+            <div class="col-lg-4 col-md-6 form-group">
+              <input type="text" name="last-name" class="form-control" id="last-name" placeholder="Tu apellido" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
+              <div class="validate"></div>
+            </div>
+            <div class="col-lg-4 col-md-6 form-group mt-3 mt-md-0">
+              <input type="email" class="form-control" name="email" id="email" placeholder="Tu correo" data-rule="email" data-msg="Please enter a valid email">
+              <div class="validate"></div>
+            </div>
+            <div class="col-lg-4 col-md-6 form-group mt-3 mt-md-0">
+              <input type="number" class="form-control" name="phone" id="phone" placeholder="Tu telefono" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
+              <div class="validate"></div>
+            </div>
+          </div>
+          <div class="mb-3">
+            <div class="loading">Cargando</div>
+            <div class="error-message"></div>
+            <div class="sent-message">Gracias por tu compra, te contactaremos para confirmar tu pedido</div>
+          </div>
+          <div class="text-center"><button type="submit">Enviar</button></div>
+        </form>
+
+      </div>
     </section>
   </main>
   <!-- ======= Footer ======= -->

@@ -192,8 +192,32 @@ h6 {
 }
 
 .book-a-table-btn:hover {
+
   background: #61420d;
   color: #fff;
+}
+
+.row-register{
+  display: grid;
+  align-content: center;
+  justify-items: center;
+  align-items: center;
+}
+
+.section-register h2{
+  margin: 20px;
+  font-size: 30px;
+  font-weight: 400;
+  font-family: "Playfair Display", serif;
+  color: #cda45e 
+}
+
+.section-register p {
+  margin: 28px;
+  font-size: 25px;
+  font-weight: 200;
+  font-family: "Playfair Display", serif;
+  color: #f7f1f7;
 }
 
 @media (max-width: 992px) {
@@ -683,7 +707,7 @@ section {
 /*--------------------------------------------------------------
 # Others sections
 --------------------------------------------------------------*/
-.cart-page .sign_up {
+.cart_page {
   margin-top: 8em;
 }
 
@@ -921,10 +945,12 @@ a {
 }
 
 .checkout {
+  margin-right: 10%;
   background-color: green;
 }
 
 .removeAll {
+  margin-left: 10%;
   background-color: red;
 }
 
@@ -1178,6 +1204,22 @@ a {
   background: #d3af71;
 }
 
+/*--------------------------------------------------------------
+# Gallery
+--------------------------------------------------------------*/
+.gallery .gallery-item {
+  overflow: hidden;
+  border-right: 3px solid #454035;
+  border-bottom: 3px solid #454035;
+}
+
+.gallery .gallery-item img {
+  transition: all ease-in-out 0.4s;
+}
+
+.gallery .gallery-item:hover img {
+  transform: scale(1.1);
+}
 
 
 /*--------------------------------------------------------------
